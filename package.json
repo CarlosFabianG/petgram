@@ -1,0 +1,19 @@
+{
+  "name": "petgram",
+  "version": "1.0.0",
+  "description": "instagram clone made with react",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarlosFabianG/petgram.git"
+  },
+  "author": "Carlos Fabian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/midudev/curso-platzi-react-avanzado/issues"
+  },
+  "homepage": "https://github.com/midudev/curso-platzi-react-avanzado#readme"
+}
