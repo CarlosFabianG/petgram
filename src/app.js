@@ -1,8 +1,16 @@
 import React from 'react'
-import { Category } from './Components/Category'
+import { ListOfCategories } from './Components/ListOfCategories'
+import { GlobalStyle } from './GlobalStyles'
+import { PhotoCard } from './Components/PhotoCard'
 
 function App () {
-  return <Category />
+  return (
+    <>
+      <GlobalStyle />
+      <ListOfCategories />
+      <PhotoCard />
+    </>
+  )
 }
 
 export default App
