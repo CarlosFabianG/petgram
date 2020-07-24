@@ -36,7 +36,7 @@ export const ListOfCategories = () => {
   }, [showFixed])
 
   const renderList = (fixed) => (
-    loading ? <List>{[1, 2, 3, 4].map(category => <Item key={category}><Loader /></Item>)}</List>
+    loading ? <List>{[1, 2, 3, 4, 5].map(category => <Item key={category}><Loader /></Item>)}</List>
       : <List fixed={fixed}>
         {
           categories.map(category => <Item key={category.id}><Category {...category} /></Item>)
