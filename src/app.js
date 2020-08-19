@@ -2,7 +2,7 @@ import React from 'react'
 import { Logo } from './Components/Logo'
 import { ListOfCategories } from './Components/ListOfCategories'
 import { GlobalStyle } from './styles/GlobalStyles'
-import { ListOfPhotoCards } from './Components/ListOfPhotoCards'
+import { ListOfPhotoCards } from './container/ListOfPhotoCards'
 
 function App () {
   return (
