@@ -4,6 +4,7 @@ import { GlobalStyle } from './styles/GlobalStyles'
 
 import { Home } from './pages/Home'
 import { Detail } from './pages/Detail'
+import { NavBar } from './Components/NavBar'
 
 import { Router } from '@reach/router'
 
@@ -17,6 +18,7 @@ export function App () {
         <Home path='/pet/:id' />
         <Detail path='detail/:id' />
       </Router>
+      <NavBar />
     </>
   )
 }
