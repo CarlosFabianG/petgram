@@ -3,6 +3,7 @@ import { Logo } from './Components/Logo'
 import { ListOfCategories } from './Components/ListOfCategories'
 import { GlobalStyle } from './styles/GlobalStyles'
 import { ListOfPhotoCards } from './container/ListOfPhotoCards'
+import { PhotoCardWithQuery } from './container/PhotoCardWithQuery'
 
 export function App () {
   const urlParams = new window.URLSearchParams(window.location.search)
@@ -14,7 +15,7 @@ export function App () {
       <Logo />
       {
         detailId
-          ? <h1>Detail ID</h1>
+          ? <PhotoCardWithQuery id={detailId} />
           : <>
             <ListOfCategories />
             <ListOfPhotoCards />
