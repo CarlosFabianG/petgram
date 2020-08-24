@@ -12,9 +12,7 @@ import { NavBar } from './Components/NavBar'
 
 import { Router } from '@reach/router'
 
-const UserLogged = ({ children }) => {
-  return children({ isAuth: false })
-}
+import Context from './context'
 
 export function App () {
   return (
@@ -26,7 +24,7 @@ export function App () {
         <Home path='/pet/:id' />
         <Detail path='detail/:id' />
       </Router>
-      <UserLogged>
+      <Context.Consumer>
         {
           ({ isAuth }) =>
             isAuth
@@ -40,7 +38,7 @@ export function App () {
                 <NotRegisteredUser path='/user' />
               </Router>
         }
-      </UserLogged>
+      </Context.Consumer>
       <NavBar />
     </>
   )
